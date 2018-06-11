@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_margin="16dp"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_title_simple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Notification"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"
+        android:textSize="22sp"/>
+
+        <RelativeLayout
+            android:id="@+id/content_type"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:text="@string/scenedoc_text_type"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spn_notification_type"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toEndOf="@+id/text_type"
+                android:layout_toRightOf="@+id/text_type"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/content_title"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/scenedoc_text_title"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_title"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toEndOf="@+id/text_title"
+                android:layout_toRightOf="@+id/text_title"
+                android:hint="@string/scenedoc_text_hint_title"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/content_message"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/text_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/scenedoc_text_message"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_message"
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toEndOf="@+id/text_message"
+                android:layout_toRightOf="@+id/text_message"
+                android:hint="@string/scenedoc_text_hint_message"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/content_bigtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_bigtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/scenedoc_text_bigtext"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/edt_bigtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/text_bigtext"
+            android:layout_toRightOf="@+id/text_bigtext"
+            android:hint="@string/scenedoc_text_hint_bigtext"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_notify_simple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Dismissable" />
+
+        <Button
+            android:id="@+id/btn_notify_simple_1"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:text="Dissmissable 1" />
+
+        <Button
+            android:id="@+id/btn_notify_ongoing_start"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#208810"
+            android:text="Ongoing Start" />
+
+        <Button
+            android:id="@+id/btn_notify_ongoing_stop"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:background="#e50b0b"
+            android:text="Ongoing Stop" />
+
+        <TextView
+        android:id="@+id/text_title_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Notification Custom"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/content_imgbackgrond"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_notify_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scenedoc_button_notify_custom"/>
+
+    </LinearLayout>
+
+</ScrollView>

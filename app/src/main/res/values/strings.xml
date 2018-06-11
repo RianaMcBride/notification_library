@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">TestNotifications</string>
+    <string name="remote">remote</string>
+    <string name="local">local</string>
+    <string name="global">global</string>
+    <string name="board">board</string>
+    <string name="arrival">arrival</string>
+    <string name="total">total</string>
+
+    <string name="cancelAll">cancelAll</string>
+    <string name="dismiss">dismiss</string>
+
+    <string name="zero">0</string>
+    <string name="scenedoc_app_name">SceneDoc Notification</string>
+    <string name="scenedoc_text_title">Title</string>
+    <string name="scenedoc_text_hint_title">Title</string>
+    <string name="scenedoc_text_message">Message</string>
+    <string name="scenedoc_text_bigtext">Big Text</string>
+    <string name="scenedoc_text_url">Url Image</string>
+    <string name="scenedoc_text_hint_url">Url</string>
+    <string name="scenedoc_text_hint_bigtext">Big Text</string>
+    <string name="scenedoc_text_hint_message">Message</string>
+    <string name="scenedoc_button_notify_simple">Notify Simple</string>
+    <string name="scenedoc_button_notify_custom">Notify Custom</string>
+    <string name="scenedoc_text_summary">5 new messages</string>
+
+    <array name="scenedoc_notification_types">
+        <item>Simple</item>
+        <item>Big Text</item>
+        <item>Inbox Style</item>
+    </array>
+
+    <array name="scenedoc_notification_inbox_lines">
+        <item>Message 1</item>
+        <item>Message 2</item>
+        <item>Message 3</item>
+        <item>Message 4</item>
+        <item>Message 5</item>
+    </array>
+    <string name="scenedoc_text_type">Type</string>
+    <string name="scenedoc_text_empty_fields">The fields can\'t be empty!</string>
+</resources>

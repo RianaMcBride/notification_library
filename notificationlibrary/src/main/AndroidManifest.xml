@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.notificationlibrary" >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application>
+        <receiver android:name=".NotificationReceiver">
+            <intent-filter>
+                <action android:name="SCENEDOC_CLICK"/>
+                <action android:name="SCENEDOC_DISMISS"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
